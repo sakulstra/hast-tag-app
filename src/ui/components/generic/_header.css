@@ -1,0 +1,7 @@
+.leaveText {
+    font-weight: bold;
+    color: #444;
+}
+.leaveText:hover {
+    color: #222
+}

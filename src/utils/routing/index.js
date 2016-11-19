@@ -1,0 +1,1 @@
+export {default as MatchWhenAuthorized} from './_match-when-authorized';

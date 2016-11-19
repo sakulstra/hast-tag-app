@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #555;
+    background-color: #f1f1f1;
+    font-family: 'Indie Flower', cursive;
+}
+footer, header{
+    line-height: 3em;
+}
+.main{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.content{
+    flex: 1;
+    margin: 0 auto;
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    .content{
+        width: 100%;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px) {
+    .content{
+        width: 600px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
