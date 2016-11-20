@@ -1,7 +1,10 @@
+
 import './../main.css';
 import 'normalize.css';
 import './../ui/components/auth/stories';
 import './../ui/components/diary/stories';
+import './../ui/components/generic/stories';
+
 
 /*
 import React from 'react';

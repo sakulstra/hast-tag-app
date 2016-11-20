@@ -1,4 +1,4 @@
-export {default as HashesList} from './_hashes-list';
+export {default as HashesListContainer, HashesList} from './_hashes-list';
 export {default as HashForm} from './_hash-form';
 export {default as HashesListEmpty} from './_hashes-list-empty';
 export {default as HashListItem} from './_hash-list-item';

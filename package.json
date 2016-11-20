@@ -4,6 +4,7 @@
   "private": true,
   "devDependencies": {
     "@kadira/storybook": "^2.21.0",
+    "@kadira/storybook-addon-knobs": "^1.6.0",
     "mobx-react-devtools": "^4.2.9",
     "react-scripts": "0.7.0"
   },
@@ -11,6 +12,7 @@
     "firebase": "^3.6.0",
     "firebase-nest": "^0.1.2",
     "flexboxgrid": "^6.3.1",
+    "intl": "^1.2.5",
     "lodash": "^4.17.0",
     "mobx": "^2.6.2",
     "mobx-firebase-store": "^0.1.19",
@@ -19,6 +21,7 @@
     "normalize.css": "^5.0.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-intl": "^2.1.5",
     "react-router": "^4.0.0-alpha.5"
   },
   "scripts": {

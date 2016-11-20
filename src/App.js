@@ -7,6 +7,7 @@ import './api';
 import './api/auth';
 import './main.css';
 import 'normalize.css';
+import 'flexboxgrid';
 
 const App = ({children}) => (
     <BrowserRouter>
