@@ -21,6 +21,7 @@
     "normalize.css": "^5.0.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-file-download": "^0.3.2",
     "react-intl": "^2.1.5",
     "react-router": "^4.0.0-alpha.5"
   },

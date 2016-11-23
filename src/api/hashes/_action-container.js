@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
-import {auth, db} from '../';
-
-const hashify = (text) => {
-    return text.replace(/(?:^\w|[A-Z]|\b\w)/g, function(letter, index) {
-        return index === 0 ? letter.toLowerCase() : letter.toUpperCase();
-    }).replace(/\s+/g, '')
-}
+import { auth, db } from '../';
+import { hashify } from '../../utils/hashes';
 
 export default function(WrappedComponent){
     return class extends Component {
         fb = db.ref();
-
-
 
         insert = (text, cb) => {
             const userId = auth.currentUser.uid;

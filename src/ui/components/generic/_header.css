@@ -3,5 +3,9 @@
     color: #444;
 }
 .leaveText:hover {
-    color: #222
+    color: #222;
+    cursor: pointer;
+}
+.logo{
+  font-size: 2em;
 }

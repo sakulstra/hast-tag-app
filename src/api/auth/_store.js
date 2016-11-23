@@ -41,6 +41,15 @@ class AuthStore {
             // An error happened.
         });
     }
+
+    delete = () => {
+      auth.currentUser.delete().then(
+        () => {
+          
+        }).catch(e => {
+
+        })
+    }
 }
 
 export default new AuthStore();

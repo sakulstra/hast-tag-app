@@ -11,13 +11,13 @@ class HashForm extends Component {
     };
 
     componentWillReceiveProps(nextProps) {
-        const { container: { doc } } = this.props;
-        if (nextProps.container.doc
-            && nextProps.container.doc.text
-            && _.isEmpty(doc)
+        const { container: { doc } } = nextProps;
+        if (doc
+            && doc.text
+            && _.isEmpty(this.props.container.doc)
             && moment(doc.created).isSame(moment(), 'd')
         ) {
-            this.setState({value: nextProps.container.doc.text});
+            this.setState({value: doc.text});
         }
     }
 

@@ -1,5 +1,5 @@
 .hash-item {
-    margin: 0.5em 0.3em;
+    margin: 0.8em 0.3em;
     position: relative;
     transition: all 0.2s ease;
     top:0;
@@ -8,16 +8,18 @@
     float:left;
 }
 
-.hash-item:hover {
-    top: -0.4em;
-    border-bottom: 1px solid black;
-}
-
-.hash-item:hover:after {
-    position: absolute;
-    top: 1.2em;
-    left: 0;
+div[data-hover]:hover:after {
     content: attr(data-hover);
+    position: absolute;
+    padding: 2px 8px;
+    color: #333;
+    left: 0;
+    top: 100%;
+    white-space: nowrap;
+    z-index: 20;
+}
+.hash-item:hover {
+    text-decoration: underline;
 }
 
 .hash-item:before{

@@ -4,9 +4,15 @@ import {LoginWidget} from './../components/auth';
 
 const Home = () => (
     <Base>
-        <LoginWidget />
-        <div>
-            <h2>Hello, nice to have you here :)</h2>
+        <div className="row">
+            <div className="col-xs-12">
+                <div className="box">
+                    <LoginWidget />
+                    <div>
+                        <h2>Hello, nice to have you here :)</h2>
+                    </div>
+                </div>
+            </div>
         </div>
         <div className="row">
             <div className="col-sm-12">
@@ -14,9 +20,9 @@ const Home = () => (
                     <h3>#Wth?</h3>
                     <p>
                         Yep. This is even more awesome than you aleady think.
-                        You can basically write one #hash(a long word in canelcase) a day.
+                        You can basically write one #hash(a long word in camelcase) a day.
                         Think about what was the most important, funny, nice thing that happened today.
-                        This forces you to reflect you day and whats worth to be saved.
+                        This forces you to reflect you day and to think about whats worth to be remembered.
                     </p>
                 </div>
             </div>
@@ -47,7 +53,7 @@ const Home = () => (
                     <p>
                         You have one input field.
                         That's the whole application.
-                        Every moron can use it.
+                        Everyone can use it.
                     </p>
                 </div>
             </div>
@@ -58,7 +64,7 @@ const Home = () => (
                     <h3>#feedback</h3>
                     <p>
                         We would actually love to hear from you.
-                        This app isn't meant to serious, but we'd like to improve it to make is even better ;)
+                        This app isn't meant to serious, but we'd like to improve it to make it even better ;)
                         Feel free to send a mail to <a href="mailto:lukas@waat.eu">lukas@waat.eu</a>.
                     </p>
                 </div>

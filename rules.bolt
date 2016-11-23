@@ -2,7 +2,7 @@ path /hashes/{userid} {
     read() {isCurrentUser(userid)}
 }
 path /hashes/{userid}/{id} is Hash {
-    read() {isCurrentUser(userid)}
+    read() {prior(root).settings[userid].private == false || isCurrentUser(userid)}
     write() {isCurrentUser(userid)}
 }
 

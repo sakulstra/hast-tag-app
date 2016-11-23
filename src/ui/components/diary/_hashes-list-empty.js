@@ -2,7 +2,8 @@ import React from 'react';
 
 const HashesListEmpty = () => (
     <div>
-        :'( oh no hashes yet
+        <div className="hash-item">welcome</div>
+        <div className="hash-item">enterAHash;)</div>
     </div>
 );
 

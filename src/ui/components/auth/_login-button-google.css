@@ -1,6 +1,6 @@
 .circle {
     border-radius: 50%/50%;
-    background-color: #eee;
+    background-color: #4CAF50;
     width: 100px;
     height: 100px;
     line-height: 100px;
@@ -9,12 +9,12 @@
     box-shadow: 2px 2px 2px #ccc;
     cursor: pointer;
     transition: all 0.3s ease;
-    color: #888;
+    color: #eee;
     margin: 0 auto 20px;
 }
 
 .circle:hover {
     transition: all 0.3s ease;
-    box-shadow: 2px 2px 2px #bbb;
-    color: #555;
+    box-shadow: 3px 3px 3px #aaa;
+    color: #fff;
 }

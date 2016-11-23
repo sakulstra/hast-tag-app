@@ -1,11 +1,35 @@
 import React from 'react';
+import { DownloadDataButton, SoftDeleteButton } from './../components/generic';
+import { Base } from './../layouts';
 
-const Settings = () => (
-    <div>
-        If you want to *export* you data you can do it via settings.
-        If you want to *delete* everything, just delete you account via settings.
-        *warning* we don't do soft deletes. What's gone is gone and will never come back.
+const Settings = ({data}) => (
+  <Base>
+    <div className="row">
+      <div className="col-xs-12">
+        <div className="box">
+          <h3>Privacy</h3>
+          <p>By default your account is completely private.
+          Noone can see your data (that's actually the purpose of a diary).
+          Anyways some people tend to feel the desire to share all their data with the public.</p>
+          <p>tl;dr; If you want to share your data - just press the button below.</p>
+          <button>Make your data public</button>
+        </div>
+      </div>
+      <div className="col-xs-12">
+        <div className="box">
+          <h3>Export data</h3>
+          <DownloadDataButton />
+          ...more to come here :)
+        </div>
+      </div>
+      <div className="col-xs-12">
+        <div className="box">
+          <h3>Delete account</h3>
+          <SoftDeleteButton />
+        </div>
+      </div>
     </div>
+  </Base>
 );
 
 export default Settings;

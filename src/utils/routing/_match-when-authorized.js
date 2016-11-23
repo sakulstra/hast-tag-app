@@ -19,7 +19,7 @@ class MatchWhenAuthorized extends Component{
                     timeout: null,
                     loading: false,
                 });
-            }, 500);
+            }, 1000);
         }
         return (
             <Match {...rest} render={props => (

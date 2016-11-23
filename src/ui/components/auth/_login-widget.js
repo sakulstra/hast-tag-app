@@ -1,19 +1,27 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React, { PropTypes } from 'react';
+import { Link, Redirect } from 'react-router';
 import { authContainer } from './../../../api/auth';
 import { LoginButtonGoogle } from './';
 
-const LoginWidget = ({auth: {user}}) => (
+const LoginWidget = ({auth: {user}}, {router}) => (
     <div>
         {user && user.uid ?
-            <Link to="/diary">
+            <Link className="no-underline" to="/diary">
                 <div className="circle">
                     #
                 </div>
             </Link> :
-            <LoginButtonGoogle />
+            <LoginButtonGoogle handleLogin={() => {
+                setTimeout(() => router.transitionTo('/diary'), 1000);
+            }}/>
         }
     </div>
 );
+
+LoginWidget.contextTypes = {
+    router: PropTypes.shape({
+        transitionTo: PropTypes.func,
+    }),
+};
 
 export default authContainer(LoginWidget);
