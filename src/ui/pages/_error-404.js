@@ -1,8 +1,7 @@
 import React from 'react';
-import {Base} from './../layouts';
 
 const Error404 = () => (
-  <Base>I'm you 404 error</Base>
+  <div>I'm you 404 error</div>
 );
 
 export default Error404;

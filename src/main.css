@@ -68,3 +68,8 @@ button:hover {
     background-color: #2C8F30; /* Green */
     transition: all 0.2s ease;
 }
+
+button:disabled {
+    background-color: #8CEF90;
+    cursor: not-allowed;
+}

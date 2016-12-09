@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { HashInput } from '../diary';
-import { hashify } from '../../../utils/hashes';
 import { authStore } from './../../../api/auth';
 
 class SoftDeleteButton extends Component{

@@ -1,9 +1,8 @@
 import React from 'react';
 import { DownloadDataButton, SoftDeleteButton } from './../components/generic';
-import { Base } from './../layouts';
 
 const Settings = ({data}) => (
-  <Base>
+  <div>
     <div className="row">
       <div className="col-xs-12">
         <div className="box">
@@ -29,7 +28,7 @@ const Settings = ({data}) => (
         </div>
       </div>
     </div>
-  </Base>
+  </div>
 );
 
 export default Settings;

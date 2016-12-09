@@ -1,11 +1,13 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/database';
+import 'firebase/auth';
 
 const config = {
     apiKey: "AIzaSyAGfZUVhuOfFuwzl9RawTiaH85AQ85BYcg",
     authDomain: "hashtagapp-6d52c.firebaseapp.com",
     databaseURL: "https://hashtagapp-6d52c.firebaseio.com",
-    storageBucket: "hashtagapp-6d52c.appspot.com",
-    messagingSenderId: "851617017454"
+    //storageBucket: "hashtagapp-6d52c.appspot.com",
+    // messagingSenderId: "851617017454"
 };
 
 const app = firebase.initializeApp(config);
@@ -13,4 +15,4 @@ const app = firebase.initializeApp(config);
 export default app;
 export const db = app.database();
 export const auth = app.auth();
-export const storage = app.storage();
+// export const storage = app.storage();

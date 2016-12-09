@@ -1,12 +1,11 @@
 import React from 'react';
 import {HashForm, HashesListContainer} from './../components/diary';
-import {Base} from './../layouts';
 
 const Diary = () => (
-    <Base>
+    <div>
         <HashForm />
         <HashesListContainer />
-    </Base>
+    </div>
 );
 
 export default Diary;

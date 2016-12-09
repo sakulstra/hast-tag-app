@@ -1,4 +1,4 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
 import { auth } from '../';
 import { observable } from 'mobx';
 
@@ -26,11 +26,7 @@ class AuthStore {
         auth.signInWithPopup(provider).then(function(result) {
             cb()
         }).catch(function(error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // The email of the user's account used.
-            var email = error.email;
+            const errorMessage = error.message;
         });
     }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer, Header, Loadingindicator } from './../components/generic';
+import { Footer, Header } from './../components/generic';
 
 const Base = ({children}) => (
     <div className="main">

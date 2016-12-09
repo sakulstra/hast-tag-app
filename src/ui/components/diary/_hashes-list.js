@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes } from 'react';
 import { HashesListEmpty, HashListItem } from './';
 import { hashesListContainer } from './../../../api/hashes';
 

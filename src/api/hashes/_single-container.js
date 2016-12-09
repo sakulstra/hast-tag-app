@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {observer} from 'mobx-react';
 import {autoSubscriber} from 'firebase-nest';
 import {store} from './';
@@ -49,7 +49,7 @@ export default function (WrappedComponent) {
                 },
             );
             return (
-                <WrappedComponent {...this.props} container={container} />
+                <WrappedComponent {...props} container={container} />
             )
         }
     }))

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ProgressButton, HashInput} from './';
+import { HashInput } from './';
 import moment from 'moment';
 import _ from 'lodash';
 import {hashesActionContainer, singleContainer} from './../../../api/hashes';

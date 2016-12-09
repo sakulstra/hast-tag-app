@@ -1,9 +1,8 @@
 import React from 'react';
-import {Base} from './../layouts';
 import {LoginWidget} from './../components/auth';
 
 const Home = () => (
-    <Base>
+    <div>
         <div className="row">
             <div className="col-xs-12">
                 <div className="box">
@@ -70,7 +69,7 @@ const Home = () => (
                 </div>
             </div>
         </div>
-    </Base>
+    </div>
 );
 
 export default Home;

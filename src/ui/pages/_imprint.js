@@ -1,10 +1,9 @@
 import React from 'react';
-import {Base} from './../layouts';
 
 const Imprint = () => (
-  <Base>
+  <div>
     Yes, we are in germany here. Of course we have a super useless imprint.
-  </Base>
+  </div>
 );
 
 export default Imprint;

@@ -7,7 +7,7 @@ class Loadingindicator extends Component{
     };
 
     componentDidMount() {
-        const {ival, dots} = this.state;
+        const {ival} = this.state;
         if (!ival) {
             const iv = setInterval(() => {
                 this.increase();
@@ -26,7 +26,7 @@ class Loadingindicator extends Component{
     }
 
     render() {
-        const {ival, dots} = this.state;
+        const {dots} = this.state;
         return (
             <div>
                 #Loading{dots}

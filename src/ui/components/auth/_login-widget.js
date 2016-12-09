@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { Link, Redirect } from 'react-router';
+import { Link } from 'react-router';
 import { authContainer } from './../../../api/auth';
 import { LoginButtonGoogle } from './';
 
